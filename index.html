@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h2>TDEE Calculator</h2>
+
+<form id="tdeeForm">
+    <label>Weight (kg):</label>
+    <input type="number" id="weight" placeholder="Enter weight" required>
+
+    <label>Height (cm):</label>
+    <input type="number" id="height" placeholder="Enter height" required>
+
+    <label>Age:</label>
+    <input type="number" id="age" placeholder="Enter age" required>
+
+    <label>Gender:</label>
+    <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+    <label>Activity Level:</label>
+    <select id="activity">
+        <option value="1.2">Sedentary (little to no exercise)</option>
+        <option value="1.375">Lightly active (1-3 days/week)</option>
+        <option value="1.55">Moderately active (3-5 days/week)</option>
+        <option value="1.725">Very active (6-7 days/week)</option>
+        <option value="1.9">Super active (twice a day)</option>
+    </select>
+
+    <button type="button" onclick="calculateTDEE()">Calculate TDEE</button>
+</form>
+
+<p id="result"></p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
